@@ -1,7 +1,7 @@
 package up.edu.br.models;
 
 public abstract class Pessoa {
-    private int id;
+    private final int id;
     private String nome;
     private String cpf;
     private String email;

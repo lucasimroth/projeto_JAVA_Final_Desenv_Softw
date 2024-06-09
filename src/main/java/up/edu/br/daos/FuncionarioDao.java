@@ -6,14 +6,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FuncionarioDao implements CrudInterface<Funcionario> {
-    private List<Funcionario> funcionarios = CarregarFuncionarios();
+    private final static List<Funcionario> funcionarios = CarregarFuncionarios();
 
-    private List<Funcionario> CarregarFuncionarios() {
+    private static List<Funcionario> CarregarFuncionarios() {
         return new ArrayList<>();
     }
 
-    @Override
-    public Funcionario buscarPorCpf(String cpf) {
+    public Funcionario buscarPorId(int id)
+    {
+        for (Funcionario f : funcionarios)
+        {
+            if (f.getId() == id)
+            {
+                return f;
+            }
+        }
         return null;
     }
 
@@ -33,17 +40,42 @@ public class FuncionarioDao implements CrudInterface<Funcionario> {
     }
 
     @Override
-    public void alterar() {
-
+    public void alterar(int id, Funcionario funcionario)
+    {
+        for (Funcionario f : funcionarios)
+        {
+            if (f.getId() == id)
+            {
+                f.setNome(funcionario.getNome());
+                f.setCpf(funcionario.getCpf());
+                f.setEmail(funcionario.getEmail());
+                f.setTelefone(funcionario.getTelefone());
+                return;
+            }
+        }
+        System.out.println("Funcionário não encontrado\n");
     }
 
     @Override
-    public void excluir() {
-
+    public void excluir(int id)
+    {
+        for (Funcionario f : funcionarios)
+        {
+            if (f.getId() == id)
+            {
+                funcionarios.remove(f);
+                return;
+            }
+        }
+        System.out.println("Funcionário não encontrado\n");
     }
 
     @Override
-    public void listar() {
-
+    public void listar()
+    {
+        for (Funcionario f : funcionarios)
+        {
+            System.out.println(f);
+        }
     }
 }
