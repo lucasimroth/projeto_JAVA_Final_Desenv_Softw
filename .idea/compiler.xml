@@ -9,5 +9,8 @@
         <module name="EstacionamentoFinal" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="to_do_list" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
