@@ -5,8 +5,8 @@ import up.edu.br.controllers.FuncionarioController;
 import java.util.Scanner;
 
 public class FuncionarioView {
-    Scanner scanner = new Scanner(System.in);
-    public void cadastrarFuncionario(Scanner scanner) {
+    static Scanner scanner = new Scanner(System.in);
+    public static void cadastrarFuncionario() {
         System.out.println("Digite o nome do funcionário: ");
         String nome = scanner.nextLine();
         System.out.println("Digite o CPF do funcionário: ");
@@ -15,11 +15,12 @@ public class FuncionarioView {
         String email = scanner.nextLine();// verificador de email
         System.out.println("Digite o telefone do funcionário: ");
         String telefone = scanner.nextLine(); // verificador de telefone
+        scanner.nextLine();
 
         FuncionarioController.cadastrarFuncionario(nome, cpf, email, telefone);
     }
 
-    public void alterarFuncionario() {
+    public static void alterarFuncionario() {
         FuncionarioController.listarFuncionarios();
         int id;
 
@@ -28,7 +29,7 @@ public class FuncionarioView {
             id = scanner.nextInt();
             scanner.nextLine();
 
-        } while (!confirmarId(id));
+        } while (confirmarId(id));
 
         System.out.println("Digite o novo nome do funcionário: ");
         String nome = scanner.nextLine();
@@ -42,19 +43,19 @@ public class FuncionarioView {
         FuncionarioController.alterarFuncionario(id, nome, cpf, email, telefone);
     }
 
-    public void excluirFuncionario() {
+    public static void excluirFuncionario() {
         int id;
         do {
             System.out.println("Digite o ID do funcionário que deseja excluir: ");
             id = scanner.nextInt();
             scanner.nextLine();
 
-        } while (!confirmarId(id));
+        } while (confirmarId(id));
 
         FuncionarioController.excluirFuncionario(id);
     }
 
-    public void listarFuncionarios() {
+    public static void listarFuncionarios() {
         FuncionarioController.listarFuncionarios();
     }
 
@@ -65,11 +66,11 @@ public class FuncionarioView {
         FuncionarioController.buscarFuncionarioPorId(id);
     }
 
-    public boolean confirmarId(int id) {
+    public static boolean confirmarId(int id) {
         FuncionarioController.buscarFuncionarioPorId(id);
-        System.out.println("é o usuário que deseja alterar? (1 - sim, 2 - não)");
+        System.out.println("é o usuário que deseja? (1 - sim, 2 - não)");
         int confirmacao = scanner.nextInt();
         scanner.nextLine();
-        return confirmacao == 1;
+        return confirmacao != 1;
     }
 }

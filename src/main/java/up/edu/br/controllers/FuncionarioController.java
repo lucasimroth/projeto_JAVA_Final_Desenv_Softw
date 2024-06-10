@@ -9,7 +9,8 @@ public class FuncionarioController {
 
     public static void cadastrarFuncionario(String nome, String cpf, String email, String telefone)
     {
-        Funcionario funcionario = new Funcionario(nome, cpf, email, telefone);
+
+        Funcionario funcionario = new Funcionario(FuncionarioDao.MaiorID()+1, nome, cpf, email, telefone);
         funcionarioDao.cadastrar(funcionario);
     }
 
@@ -29,6 +30,13 @@ public class FuncionarioController {
 
     public static void buscarFuncionarioPorId(int id) {
         Funcionario f = funcionarioDao.buscarPorId(id);
-        System.out.println(f);
+        if (f != null)
+        {
+            funcionarioDao.imprimirFuncionario(f);
+        }
+        else
+        {
+            System.out.println("Funcionário não encontrado\n");
+        }
     }
 }

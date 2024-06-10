@@ -1,7 +1,9 @@
 package up.edu.br.models;
 
+import up.edu.br.utils.Util;
+
 public abstract class Pessoa {
-    private final int id;
+    private int id;
     private String nome;
     private String cpf;
     private String email;
@@ -16,7 +18,6 @@ public abstract class Pessoa {
     }
 
     public Pessoa(String nome, String cpf, String email, String telefone) {
-        this.id = 0;//chamar funcao para pegar maior id
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -41,6 +42,10 @@ public abstract class Pessoa {
 
     public String getTelefone() {
         return telefone;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setNome(String nome) {
