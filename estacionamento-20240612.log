@@ -1,0 +1,54 @@
+2024-06-12 00:56:44.653 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-12 00:56:44.661 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-12 00:56:44.668 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
+2024-06-12 00:57:09.712 [main] ERROR up.edu.br.daos.FuncionarioDao - Erro ao validar ID
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.base/java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221) ~[?:?]
+	at up.edu.br.validar.ValidaCrud.validaId(ValidaCrud.java:19) [classes/:?]
+	at up.edu.br.views.FuncionarioView.alterarFuncionario(FuncionarioView.java:29) [classes/:?]
+	at up.edu.br.Main.main(Main.java:14) [classes/:?]
+2024-06-12 00:57:09.725 [main] ERROR up.edu.br.daos.FuncionarioDao - Erro ao validar ID
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.base/java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221) ~[?:?]
+	at up.edu.br.validar.ValidaCrud.validaId(ValidaCrud.java:19) [classes/:?]
+	at up.edu.br.views.FuncionarioView.alterarFuncionario(FuncionarioView.java:29) [classes/:?]
+	at up.edu.br.Main.main(Main.java:14) [classes/:?]
+2024-06-12 00:57:17.473 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-12 00:57:17.476 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-12 00:57:17.483 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
+2024-06-12 00:57:24.687 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-12 00:57:24.690 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-12 00:57:24.699 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
+2024-06-12 00:57:26.241 [main] ERROR up.edu.br.daos.FuncionarioDao - Erro ao validar ID
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.base/java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221) ~[?:?]
+	at up.edu.br.validar.ValidaCrud.validaId(ValidaCrud.java:19) [classes/:?]
+	at up.edu.br.views.FuncionarioView.alterarFuncionario(FuncionarioView.java:29) [classes/:?]
+	at up.edu.br.Main.main(Main.java:14) [classes/:?]
+2024-06-12 00:57:41.635 [main] ERROR up.edu.br.daos.FuncionarioDao - Erro ao validar ID
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.base/java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221) ~[?:?]
+	at up.edu.br.validar.ValidaCrud.validaId(ValidaCrud.java:19) [classes/:?]
+	at up.edu.br.views.FuncionarioView.alterarFuncionario(FuncionarioView.java:29) [classes/:?]
+	at up.edu.br.Main.main(Main.java:14) [classes/:?]
+2024-06-12 00:57:45.573 [main] ERROR up.edu.br.daos.FuncionarioDao - Erro ao validar ID
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947) ~[?:?]
+	at java.base/java.util.Scanner.next(Scanner.java:1602) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267) ~[?:?]
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221) ~[?:?]
+	at up.edu.br.validar.ValidaCrud.validaId(ValidaCrud.java:19) [classes/:?]
+	at up.edu.br.views.FuncionarioView.alterarFuncionario(FuncionarioView.java:29) [classes/:?]
+	at up.edu.br.Main.main(Main.java:14) [classes/:?]

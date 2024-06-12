@@ -1,7 +1,5 @@
 package up.edu.br.models;
 
-import up.edu.br.utils.Util;
-
 public abstract class Pessoa {
     private int id;
     private String nome;
@@ -20,6 +18,13 @@ public abstract class Pessoa {
     public Pessoa(String nome, String cpf, String email, String telefone) {
         this.nome = nome;
         this.cpf = cpf;
+        this.email = email;
+        this.telefone = telefone;
+    }
+
+    public Pessoa(int id, String nome, String email, String telefone) {
+        this.id = id;
+        this.nome = nome;
         this.email = email;
         this.telefone = telefone;
     }

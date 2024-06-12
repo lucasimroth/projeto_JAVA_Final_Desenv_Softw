@@ -14,9 +14,9 @@ public class FuncionarioController {
         funcionarioDao.cadastrar(funcionario);
     }
 
-    public static void alterarFuncionario(int id, String nome, String cpf, String email, String telefone)
+    public static void alterarFuncionario(int id, String nome, String email, String telefone)
     {
-        Funcionario funcionario = new Funcionario(id, nome, cpf, email, telefone);
+        Funcionario funcionario = new Funcionario(id, nome, email, telefone);
         funcionarioDao.alterar(id, funcionario);
     }
 
@@ -28,6 +28,10 @@ public class FuncionarioController {
         funcionarioDao.listar();
     }
 
+    /**
+     * Método que busca um funcionário pelo id
+     * @param id
+     */
     public static void buscarFuncionarioPorId(int id) {
         Funcionario f = funcionarioDao.buscarPorId(id);
         if (f != null)
@@ -38,5 +42,15 @@ public class FuncionarioController {
         {
             System.out.println("Funcionário não encontrado\n");
         }
+    }
+
+    public static boolean jaExisteCpf(String cpf)
+    {
+        return funcionarioDao.jaExisteCpf(cpf);
+    }
+
+    public static void SalvarArquivo()
+    {
+        funcionarioDao.salvarArquivo();
     }
 }

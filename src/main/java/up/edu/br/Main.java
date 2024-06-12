@@ -1,6 +1,7 @@
 package up.edu.br;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import up.edu.br.controllers.FuncionarioController;
 import up.edu.br.views.FuncionarioView;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -10,10 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        FuncionarioView.cadastrarFuncionario();
-        FuncionarioView.cadastrarFuncionario();
-
         FuncionarioView.alterarFuncionario();
+        FuncionarioView.cadastrarFuncionario();
 
         FuncionarioView.listarFuncionarios();
 
@@ -21,5 +20,6 @@ public class Main {
 
         FuncionarioView.listarFuncionarios();
 
+        FuncionarioController.SalvarArquivo();
     }
 }

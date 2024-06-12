@@ -1,21 +1,20 @@
 package up.edu.br.views;
 
 import up.edu.br.controllers.FuncionarioController;
+import up.edu.br.validar.ValidaCrud;
 
-import java.util.Scanner;
 
 public class FuncionarioView {
-    static Scanner scanner = new Scanner(System.in);
+
     public static void cadastrarFuncionario() {
         System.out.println("Digite o nome do funcionário: ");
-        String nome = scanner.nextLine();
+        String nome = ValidaCrud.validaNome();
         System.out.println("Digite o CPF do funcionário: ");
-        String cpf = scanner.nextLine(); // colocar verificar de cpf
+        String cpf = ValidaCrud.validaCpf();
         System.out.println("Digite o email do funcionário: ");
-        String email = scanner.nextLine();// verificador de email
-        System.out.println("Digite o telefone do funcionário: ");
-        String telefone = scanner.nextLine(); // verificador de telefone
-        scanner.nextLine();
+        String email = ValidaCrud.validaEmail();
+        System.out.println("Digite o telefone do funcionário(numeros): ");
+        String telefone = ValidaCrud.validaTelefone();
 
         FuncionarioController.cadastrarFuncionario(nome, cpf, email, telefone);
     }
@@ -26,31 +25,27 @@ public class FuncionarioView {
 
         do {
             System.out.println("Digite o ID do funcionário que deseja alterar: ");
-            id = scanner.nextInt();
-            scanner.nextLine();
+            id = ValidaCrud.validaId();
 
-        } while (confirmarId(id));
+        } while (ValidaCrud.confirmarId(id));
 
         System.out.println("Digite o novo nome do funcionário: ");
-        String nome = scanner.nextLine();
-        System.out.println("Digite o novo CPF do funcionário: ");
-        String cpf = scanner.nextLine(); // colocar verificar de cpf
+        String nome = ValidaCrud.validaNome();
         System.out.println("Digite o novo email do funcionário: ");
-        String email = scanner.nextLine();// verificador de email
+        String email = ValidaCrud.validaEmail();
         System.out.println("Digite o novo telefone do funcionário: ");
-        String telefone = scanner.nextLine(); // verificador de telefone
+        String telefone = ValidaCrud.validaTelefone();
 
-        FuncionarioController.alterarFuncionario(id, nome, cpf, email, telefone);
+        FuncionarioController.alterarFuncionario(id, nome, email, telefone);
     }
 
     public static void excluirFuncionario() {
         int id;
         do {
             System.out.println("Digite o ID do funcionário que deseja excluir: ");
-            id = scanner.nextInt();
-            scanner.nextLine();
+            id = ValidaCrud.validaId();
 
-        } while (confirmarId(id));
+        } while (ValidaCrud.confirmarId(id));
 
         FuncionarioController.excluirFuncionario(id);
     }
@@ -59,18 +54,4 @@ public class FuncionarioView {
         FuncionarioController.listarFuncionarios();
     }
 
-    public void buscarFuncionarioPorId() {
-        System.out.println("Digite o ID do funcionário que deseja buscar: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
-        FuncionarioController.buscarFuncionarioPorId(id);
-    }
-
-    public static boolean confirmarId(int id) {
-        FuncionarioController.buscarFuncionarioPorId(id);
-        System.out.println("é o usuário que deseja? (1 - sim, 2 - não)");
-        int confirmacao = scanner.nextInt();
-        scanner.nextLine();
-        return confirmacao != 1;
-    }
 }
