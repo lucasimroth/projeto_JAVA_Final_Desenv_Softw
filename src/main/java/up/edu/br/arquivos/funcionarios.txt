@@ -1,7 +1,0 @@
-1;lucas;11879956900;lucas-imroth@outlook.com;995957968
-4;teste;54153617075;teste@gmail.com;65654976
-5;lucas imroth;11879956900;lucas-imroth@outlook.com;41995957968
-6;joao;66553003041;jggalbine@gmail.com;41996497635
-7;lucas;70218720033;lucas@imort.com;4199647963
-8;algum;06689521052;algum@email.com;4196354615
-9;lucas;17492204078;lucas.imroth@gmail.com;41995957968

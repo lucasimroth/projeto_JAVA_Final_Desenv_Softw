@@ -1,0 +1,24 @@
+2024-06-13 17:18:12.647 [main] INFO  up.edu.br.Main - Iniciando sistema
+2024-06-13 17:18:21.587 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-13 17:18:21.587 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-13 17:19:22.646 [main] INFO  up.edu.br.Main - Iniciando sistema
+2024-06-13 17:19:27.985 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-13 17:19:27.986 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-13 17:20:24.851 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
+2024-06-13 17:22:18.377 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
+2024-06-13 17:26:03.196 [main] INFO  up.edu.br.Main - Iniciando sistema
+2024-06-13 17:26:12.920 [main] INFO  up.edu.br.Main - Iniciando sistema
+2024-06-13 17:26:17.990 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-13 17:26:17.990 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-13 17:28:50.841 [main] INFO  up.edu.br.Main - Iniciando sistema
+2024-06-13 17:28:57.213 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-13 17:28:57.214 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-13 17:31:09.796 [main] INFO  up.edu.br.Main - Iniciando sistema
+2024-06-13 17:31:14.513 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-13 17:31:14.514 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-13 17:34:42.146 [main] INFO  up.edu.br.Main - Iniciando sistema
+2024-06-13 17:34:51.415 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-13 17:34:51.415 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-13 17:44:46.720 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
+2024-06-13 17:46:49.139 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
+2024-06-13 17:47:00.009 [main] INFO  up.edu.br.daos.FuncionarioDao - Iniciando validação do ID
