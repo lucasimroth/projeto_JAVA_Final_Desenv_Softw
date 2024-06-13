@@ -1,5 +1,6 @@
 package up.edu.br.views;
 
+import up.edu.br.Exception.NotFoundException;
 import up.edu.br.controllers.FuncionarioController;
 import up.edu.br.validar.ValidaCrud;
 
@@ -26,6 +27,13 @@ public class FuncionarioView {
         do {
             System.out.println("Digite o ID do funcionário que deseja alterar: ");
             id = ValidaCrud.validaId();
+            try{
+                FuncionarioController.imprimirFuncionario(FuncionarioController.buscarPorId(id));
+
+            } catch (NotFoundException e) {
+                System.out.println("Funcionário não encontrado\n");
+                return;
+            }
 
         } while (ValidaCrud.confirmarId(id));
 
@@ -44,7 +52,12 @@ public class FuncionarioView {
         do {
             System.out.println("Digite o ID do funcionário que deseja excluir: ");
             id = ValidaCrud.validaId();
-
+            try{
+                FuncionarioController.buscarPorId(id);
+            } catch (NotFoundException e) {
+                System.out.println("Funcionário não encontrado\n");
+                return;
+            }
         } while (ValidaCrud.confirmarId(id));
 
         FuncionarioController.excluirFuncionario(id);
