@@ -15,20 +15,6 @@ public abstract class Pessoa {
         this.telefone = telefone;
     }
 
-    public Pessoa(String nome, String cpf, String email, String telefone) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.email = email;
-        this.telefone = telefone;
-    }
-
-    public Pessoa(int id, String nome, String email, String telefone) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-    }
-
     public int getId() {
         return id;
     }

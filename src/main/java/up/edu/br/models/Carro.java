@@ -2,7 +2,7 @@ package up.edu.br.models;
 
 public class Carro {
     private final int id;
-    private String placa;
+    private final String placa;
     private String modelo;
     private String cor;
 
@@ -27,10 +27,6 @@ public class Carro {
 
     public String getCor() {
         return cor;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
     }
 
     public void setModelo(String modelo) {

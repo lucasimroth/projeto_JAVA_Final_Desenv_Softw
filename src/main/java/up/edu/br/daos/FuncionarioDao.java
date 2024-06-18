@@ -2,17 +2,16 @@ package up.edu.br.daos;
 
 import up.edu.br.models.Funcionario;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.PrintWriter;
-import java.io.BufferedReader;
-import java.io.FileReader;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class FuncionarioDao implements DaoInterface<Funcionario> {
     private static final Logger logger = LogManager.getLogger(FuncionarioDao.class);
-    private static final String FILE_NAME_FUNCIONARIO = "C:\\Users\\Lucas\\Documents\\GitHub\\projeto_final_JAVA\\src\\main\\java\\up\\edu\\br\\arquivos\\funcionarios.txt";
+    private static final String FILE_NAME_FUNCIONARIO = "funcionarios.txt";
 
     /**
      * Método responsável por carregar os funcionários do arquivo
@@ -37,7 +36,7 @@ public class FuncionarioDao implements DaoInterface<Funcionario> {
         }catch (Exception e)
         {
             logger.error("Ocorreu um erro ao ler arquivo funcionarios.", e);
-            System.out.println("Erro ao ler arquivo");
+            return new ArrayList<>();
         }
         return f;
     }

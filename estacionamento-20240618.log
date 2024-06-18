@@ -1,0 +1,48 @@
+2024-06-18 16:17:25.913 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-18 16:17:30.074 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:17:30.079 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:17:44.667 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:17:44.667 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:17:50.602 [main] INFO  up.edu.br.views.CarroView - Iniciando Listagem de carro
+2024-06-18 16:17:50.611 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:17:50.611 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:17:54.514 [main] INFO  up.edu.br.views.CarroView - Iniciando Exclusao de carro
+2024-06-18 16:17:54.515 [main] INFO  up.edu.br.views.CarroView - Iniciando Listagem de carro
+2024-06-18 16:17:54.515 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:17:54.515 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:17:54.516 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-18 16:17:57.283 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:17:57.284 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:18:07.582 [main] INFO  up.edu.br.views.CarroView - Iniciando Listagem de carro
+2024-06-18 16:18:07.582 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:18:07.583 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:18:10.708 [main] INFO  up.edu.br.views.CarroView - Iniciando Alteracao de carro
+2024-06-18 16:18:10.709 [main] INFO  up.edu.br.views.CarroView - Iniciando Listagem de carro
+2024-06-18 16:18:10.709 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:18:10.709 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:18:10.710 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-18 16:18:12.324 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:18:12.324 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:20:03.879 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-18 16:20:09.649 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:20:09.649 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:20:15.640 [main] INFO  up.edu.br.views.CarroView - Iniciando Listagem de carro
+2024-06-18 16:20:15.649 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:20:15.649 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:20:18.925 [main] INFO  up.edu.br.views.CarroView - Iniciando Exclusao de carro
+2024-06-18 16:20:18.925 [main] INFO  up.edu.br.views.CarroView - Iniciando Listagem de carro
+2024-06-18 16:20:18.925 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:20:18.925 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:20:18.927 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-18 16:20:20.130 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:20:20.131 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:20:29.779 [main] INFO  up.edu.br.views.CarroView - Iniciando Alteracao de carro
+2024-06-18 16:20:29.779 [main] INFO  up.edu.br.views.CarroView - Iniciando Listagem de carro
+2024-06-18 16:20:29.779 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:20:29.779 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:20:29.781 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-18 16:20:30.346 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:20:30.346 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-18 16:21:23.910 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-18 16:21:28.520 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-18 16:21:28.520 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
