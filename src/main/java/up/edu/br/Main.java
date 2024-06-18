@@ -1,29 +1,43 @@
 package up.edu.br;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import up.edu.br.controllers.FuncionarioController;
-import up.edu.br.models.Cliente;
 import up.edu.br.views.ClienteView;
 import up.edu.br.views.FuncionarioView;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
+    private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+        logger.info("Iniciando o sistema");
 
+        int opcao;
+        do {
+            System.out.println("Digite a opção desejada: ");
+            System.out.println("1 - Funcionário");
+            System.out.println("2 - Cliente");
+            System.out.println("3 - Sair");
 
-        logger.info("Iniciando sistema");
-        ClienteView.CadastrarCliente();
-        ClienteView.CadastrarCliente();
+            opcao = scan.nextInt();
+            scan.nextLine();
 
-        ClienteView.ListarClientes();
-
-        ClienteView.AlterarCliente();
-
-        ClienteView.ExcluirCliente();
-
-        ClienteView.ListarCarrosCliente();
+            switch (opcao) {
+                case 1:
+                    FuncionarioView.menu();
+                    continue;
+                case 2:
+                    ClienteView.menu();
+                    continue;
+                case 3:
+                    logger.info("Finalizando o sistema");
+                    System.out.println("Finalizando o sistema");
+                    break;
+                default:
+                    logger.error("Opção inválida");
+                    System.out.println("Opção inválida");
+            }
+        } while (opcao != 3);
     }
 }

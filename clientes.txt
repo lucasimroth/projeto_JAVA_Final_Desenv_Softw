@@ -1,0 +1,2 @@
+1;lucas;11879956900;lucas-teste@gmail.com;41995957968;1,dsm4565,zafira,branco|2,lak5464,bagatti veyron,prateada
+2;joao;14592009002;4165958787;teste@gmail.com;1,mds4565,Ferrari,prata|3,trp9876,azules,azul

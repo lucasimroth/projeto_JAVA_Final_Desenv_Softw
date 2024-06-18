@@ -2,9 +2,6 @@ package up.edu.br.validar;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import up.edu.br.controllers.ClienteController;
-import up.edu.br.controllers.FuncionarioController;
-import up.edu.br.daos.FuncionarioDao;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -13,6 +10,11 @@ public class ValidaCrud {
     static Scanner scan = new Scanner (System.in);
     private static final Logger logger = LogManager.getLogger(ValidaCrud.class);
 
+
+    /**
+     * Método responsável por validar o ID
+     * @return o ID validado
+     */
     public static int validaId(){
         logger.info("Iniciando validação do ID");
         while(true) {
@@ -30,13 +32,33 @@ public class ValidaCrud {
         }
     }
 
-    public static boolean confirmarId(int id) {
+    /**
+     * Método responsável por confirmar se o ID é o desejado
+     * @return true se o ID for confirmado, false se não for
+     */
+    public static boolean confirmarId() {
         System.out.println("é o usuário que deseja? (1 - sim, 2 - não)");
         int confirmacao = scan.nextInt();
         scan.nextLine();
         return confirmacao != 1;
     }
 
+    /**
+     * Método responsável por confirmar o CPF
+     * @param cpf o CPF a ser confirmado
+     * @return true se o CPF for confirmado, false se não for
+     */
+    public static boolean confirmarCpf(String cpf) {
+        System.out.println("\né o Cliente que deseja? (1 - sim, 2 - não)");
+        int confirmacao = scan.nextInt();
+        scan.nextLine();
+        return confirmacao != 1;
+    }
+
+    /**
+     * Método responsável por validar o nome
+     * @return o nome validado
+     */
     public static String validaNome(){
         String nome = scan.nextLine();
         while (!nome.matches("[a-zA-Z\\s]{3,}+")){
@@ -46,6 +68,10 @@ public class ValidaCrud {
         return nome;
     }
 
+    /**
+     * Método responsável por validar o CPF
+     * @return o CPF validado
+     */
     public static String validaCpf(){
         String cpf = scan.nextLine().replaceAll("\\D", "");
         while(!validaCpf2(cpf)){
@@ -54,9 +80,14 @@ public class ValidaCrud {
         return cpf;
     }
 
+    /**
+     * Metodo auxiliar que faz a validação do CPF atraves dos calculos
+     * @param cpf o cpf a ser validado
+     * @return true se o cpf for válido, false se não for
+     */
     public static boolean validaCpf2(String cpf){
 
-        if(cpf.length() != 11 || !cpf.matches("\\d+") || cpf.matches("(\\d)\\1*") || FuncionarioController.jaExisteCpf(cpf) || ClienteController.jaExisteCpf(cpf))
+        if(cpf.length() != 11 || !cpf.matches("\\d+") || cpf.matches("(\\d)\\1*"))
         {
             System.out.println("CPF inválido, digite novamente: ");
             return false;
@@ -82,6 +113,10 @@ public class ValidaCrud {
         return true;
     }
 
+    /**
+     * Método responsável por validar o email
+     * @return o email validado
+     */
     public static String validaEmail(){
         String email = scan.nextLine();
         while (!email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")){
@@ -91,6 +126,10 @@ public class ValidaCrud {
         return email;
     }
 
+    /**
+     * Método responsável por validar o telefone
+     * @return o telefone validado
+     */
     public static String validaTelefone(){
         String telefone = scan.nextLine();
         while (!telefone.matches("\\d+") || (telefone.length() < 8 || telefone.length() > 11) || telefone.matches("(\\d)\\1*")){
@@ -100,6 +139,10 @@ public class ValidaCrud {
         return telefone;
     }
 
+    /**
+     * Método responsável por validar a placa
+     * @return a placa validada
+     */
     public static String validaPlaca(){
         String placa = scan.nextLine().replaceAll("[^a-zA-Z0-9]", "");
         while (!placa.matches("[a-zA-Z]{3}\\d{4}")){
@@ -109,6 +152,10 @@ public class ValidaCrud {
         return placa;
     }
 
+    /**
+     * Método responsável por validar o modelo
+     * @return o modelo validado
+     */
     public static String validaModelo(){
         String modelo = scan.nextLine();
         while (!modelo.matches("[a-zA-Z\\s]{3,}+")){
@@ -118,6 +165,10 @@ public class ValidaCrud {
         return modelo;
     }
 
+    /**
+     * Método responsável por validar a cor
+     * @return a cor validada
+     */
     public static String validaCor(){
         String cor = scan.nextLine();
         while (!cor.matches("[a-zA-Z\\s]{3,}+")){

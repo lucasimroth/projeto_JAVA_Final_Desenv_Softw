@@ -1,0 +1,365 @@
+2024-06-15 17:26:04.952 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 17:26:27.851 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:26:27.851 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:28) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.cadastrarFuncionario(FuncionarioController.java:111) [classes/:?]
+	at up.edu.br.views.FuncionarioView.cadastrarFuncionario(FuncionarioView.java:57) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:27) [classes/:?]
+	at up.edu.br.Main.main(Main.java:31) [classes/:?]
+2024-06-15 17:26:27.875 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:26:27.875 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:28) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.MaiorID(FuncionarioController.java:150) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.cadastrarFuncionario(FuncionarioController.java:117) [classes/:?]
+	at up.edu.br.views.FuncionarioView.cadastrarFuncionario(FuncionarioView.java:57) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:27) [classes/:?]
+	at up.edu.br.Main.main(Main.java:31) [classes/:?]
+2024-06-15 17:26:27.876 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 17:26:27.877 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 17:35:02.899 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 17:35:07.980 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:35:07.981 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:35:07.983 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-15 17:39:40.573 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 17:39:45.710 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:39:45.710 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:39:45.713 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-15 17:47:16.767 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 17:47:21.608 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:47:21.608 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:08.034 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:08.034 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:08.035 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:08.035 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:08.035 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 17:48:08.036 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 17:48:11.115 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:11.121 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:32.878 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:32.878 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:32.878 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:32.878 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:32.879 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 17:48:32.879 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 17:48:34.974 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:34.979 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:41.573 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:41.574 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:41.576 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:48:41.576 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:48:41.578 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 17:51:32.109 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:51:32.109 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:51:38.726 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:51:38.726 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:51:38.727 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:51:38.728 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:51:38.729 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 17:51:44.008 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:51:44.008 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:12.407 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:12.408 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:12.408 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 17:53:12.408 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 17:53:16.334 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:16.340 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:34.897 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:34.897 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:34.898 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 17:53:36.615 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:36.616 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:39.960 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:39.961 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:39.962 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 17:53:43.473 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:43.473 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:44.641 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:44.641 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:53:44.641 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 17:53:44.642 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 17:53:46.707 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:53:46.713 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:54:18.844 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:54:18.844 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:54:18.844 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:54:18.844 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:54:18.844 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 17:54:18.845 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 17:54:20.956 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:54:20.961 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 17:54:26.959 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-15 17:54:44.936 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 17:54:50.728 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 17:54:50.728 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:28) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.listarFuncionarios(FuncionarioController.java:71) [classes/:?]
+	at up.edu.br.views.FuncionarioView.listarFuncionarios(FuncionarioView.java:106) [classes/:?]
+	at up.edu.br.views.FuncionarioView.excluirFuncionario(FuncionarioView.java:90) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:33) [classes/:?]
+	at up.edu.br.Main.main(Main.java:32) [classes/:?]
+2024-06-15 17:54:50.740 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:08:20.082 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:08:25.581 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:08:25.581 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:27) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.listarFuncionarios(FuncionarioController.java:71) [classes/:?]
+	at up.edu.br.views.FuncionarioView.listarFuncionarios(FuncionarioView.java:114) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:36) [classes/:?]
+	at up.edu.br.Main.main(Main.java:32) [classes/:?]
+2024-06-15 18:08:35.682 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:08:37.650 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:08:37.650 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:08:40.578 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:08:40.578 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:08:40.578 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:08:40.579 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:09:13.574 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:09:16.335 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:09:16.335 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:09:16.335 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:09:16.336 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:26:39.073 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:26:42.112 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:26:44.106 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:26:46.805 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:26:46.805 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:27:06.054 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:27:06.055 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:27:06.055 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:27:06.056 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:27:06.056 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 18:27:06.056 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 18:27:08.169 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:27:08.175 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:27:11.105 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:27:14.138 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:31:07.830 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:31:11.311 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:31:11.311 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:31:11.311 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:31:11.322 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:31:21.031 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:31:24.220 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:31:24.221 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:31:24.221 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:31:24.224 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:33:50.202 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:33:53.024 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:33:53.025 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:33:53.025 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:33:53.025 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:33:53.026 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:33:53.026 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:34:47.571 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:34:53.796 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:34:53.796 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:34:58.602 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:34:58.602 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:34:58.602 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:34:58.603 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:39:16.972 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:39:20.572 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:39:20.573 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:39:20.573 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:39:20.573 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:39:20.573 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:39:20.574 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:42:36.719 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:42:41.422 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:42:41.422 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:42:41.422 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:42:41.423 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:44:52.493 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:44:58.345 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:44:58.345 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:44:58.346 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:44:58.347 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:45:33.239 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:45:51.945 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:45:54.327 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:45:58.377 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:45:58.377 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:46:35.475 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:46:35.475 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:46:35.476 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:46:35.476 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:46:35.476 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 18:46:35.477 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 18:46:42.979 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:46:42.986 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:47:11.069 [main] INFO  up.edu.br.daos.FuncionarioDao - Verificando se o arquivo do funcionario existe
+2024-06-15 18:52:23.203 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:52:23.203 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:58:47.798 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:58:50.715 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:58:50.715 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:58:50.716 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:58:50.716 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 18:58:50.719 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 18:59:03.457 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 18:59:07.881 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:59:07.881 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:27) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.verificarArquivo(FuncionarioController.java:180) [classes/:?]
+	at up.edu.br.views.FuncionarioView.alterarFuncionario(FuncionarioView.java:61) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:30) [classes/:?]
+	at up.edu.br.Main.main(Main.java:32) [classes/:?]
+2024-06-15 18:59:09.034 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:59:09.034 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:27) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.verificarArquivo(FuncionarioController.java:180) [classes/:?]
+	at up.edu.br.views.FuncionarioView.excluirFuncionario(FuncionarioView.java:94) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:33) [classes/:?]
+	at up.edu.br.Main.main(Main.java:32) [classes/:?]
+2024-06-15 18:59:10.936 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:59:10.936 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:27) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.listarFuncionarios(FuncionarioController.java:71) [classes/:?]
+	at up.edu.br.views.FuncionarioView.listarFuncionarios(FuncionarioView.java:114) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:36) [classes/:?]
+	at up.edu.br.Main.main(Main.java:32) [classes/:?]
+2024-06-15 18:59:34.137 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:59:34.138 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:27) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.cadastrarFuncionario(FuncionarioController.java:112) [classes/:?]
+	at up.edu.br.views.FuncionarioView.cadastrarFuncionario(FuncionarioView.java:57) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:27) [classes/:?]
+	at up.edu.br.Main.main(Main.java:32) [classes/:?]
+2024-06-15 18:59:34.139 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:59:34.139 [main] ERROR up.edu.br.daos.FuncionarioDao - Ocorreu um erro ao ler arquivo funcionarios.
+java.io.FileNotFoundException: funcionarios.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.FuncionarioDao.lerArquivo(FuncionarioDao.java:27) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.MaiorID(FuncionarioController.java:151) [classes/:?]
+	at up.edu.br.controllers.FuncionarioController.cadastrarFuncionario(FuncionarioController.java:118) [classes/:?]
+	at up.edu.br.views.FuncionarioView.cadastrarFuncionario(FuncionarioView.java:57) [classes/:?]
+	at up.edu.br.views.FuncionarioView.menu(FuncionarioView.java:27) [classes/:?]
+	at up.edu.br.Main.main(Main.java:32) [classes/:?]
+2024-06-15 18:59:34.139 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 18:59:34.140 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 18:59:59.764 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 18:59:59.770 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:04.628 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:04.629 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:04.629 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:04.629 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:04.631 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 19:00:06.389 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:06.389 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:07.517 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:07.517 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:07.517 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 19:00:07.518 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 19:00:10.012 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:10.013 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:11.358 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:11.359 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:28.158 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:28.159 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:28.159 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:28.159 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:28.159 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 19:00:28.159 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 19:00:43.895 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:43.901 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:00:46.696 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:00:46.696 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:01:47.854 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:01:47.855 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:01:47.855 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:01:47.855 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 19:01:47.855 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 19:01:47.856 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 19:02:25.010 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 19:02:25.015 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:51:30.406 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 23:51:35.999 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:51:35.999 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:52:02.745 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-15 23:52:08.480 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:52:08.481 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:52:42.096 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:52:42.096 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:52:42.096 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:52:42.096 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:52:42.096 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 23:52:42.097 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 23:53:00.657 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:53:00.664 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:53:00.664 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:53:00.664 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:53:00.666 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 23:53:03.948 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:53:03.948 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:53:05.236 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:53:05.236 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:53:05.236 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-15 23:53:05.236 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-15 23:53:12.092 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:53:12.097 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:57:10.160 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:57:10.161 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:57:10.161 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:57:10.161 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-15 23:57:10.162 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-15 23:57:13.554 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-15 23:57:13.554 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-16 00:02:28.417 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-16 00:02:28.417 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-16 00:02:28.418 [main] INFO  up.edu.br.daos.FuncionarioDao - iniciando Save do arquivo Funcionarios
+2024-06-16 00:02:28.418 [main] INFO  up.edu.br.daos.FuncionarioDao - Escrevendo os dados do funcionario no arquivo txt
+2024-06-16 00:02:33.872 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-16 00:02:33.878 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-16 00:02:37.966 [main] INFO  up.edu.br.Main - Finalizando o sistema
