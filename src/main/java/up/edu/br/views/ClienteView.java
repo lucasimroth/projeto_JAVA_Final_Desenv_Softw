@@ -116,7 +116,7 @@ public class ClienteView {
                 return;
             }
 
-        } while (ValidaCrud.confirmarCpf(cpf));
+        } while (ValidaCrud.confirmarCpf());
         System.out.println("Digite o novo nome do cliente: ");
         String nome = ValidaCrud.validaNome();
         System.out.println("Digite o novo email do cliente: ");
@@ -148,7 +148,7 @@ public class ClienteView {
                 return;
             }
 
-        } while (ValidaCrud.confirmarCpf(cpf));
+        } while (ValidaCrud.confirmarCpf());
         ClienteController.ExcluirCliente(cpf);
     }
 

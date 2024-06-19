@@ -19,12 +19,13 @@ public class ClienteController {
      * @param carros a lista de carros do cliente
      */
     public static void CadastrarCliente(String nome, String cpf, String email, String telefone, List<Carro> carros){
-        List<Cliente> clientes = clienteDao.lerArquivo();
-        if (jaExisteCpf(cpf, clientes))
+
+        if (jaExisteCpf(cpf))
         {
             System.out.println("\nCPF já cadastrado\n");
             return;
         }
+        List<Cliente> clientes = clienteDao.lerArquivo();
         Cliente cliente = new Cliente(MaiorID(clientes) + 1, nome, cpf, email, telefone, carros);
         clientes.add(cliente);
         clienteDao.salvarArquivo(clientes);
@@ -156,8 +157,13 @@ public class ClienteController {
      * @param cpf o cpf a ser verificado
      * @return boolean true se o cpf já existe, false se não existe
      */
-    public static boolean jaExisteCpf(String cpf, List<Cliente> clientes)
+    public static boolean jaExisteCpf(String cpf)
     {
+        List<Cliente> clientes = clienteDao.lerArquivo();
+        if(clientes.isEmpty())
+        {
+            return false;
+        }
         for (Cliente c : clientes)
         {
             if (c.getCpf().equals(cpf))
@@ -171,5 +177,39 @@ public class ClienteController {
     {
         List<Cliente> clientes = clienteDao.lerArquivo();
         return clientes.isEmpty();
+    }
+
+    public static String printToListVallet(String cpd, int idCarro)
+    {
+        List<Cliente> clientes = clienteDao.lerArquivo();
+        StringBuilder lista = new StringBuilder();
+        for (Cliente c : clientes)
+        {
+            if (c.getCpf().equals(cpd))
+            {
+                lista.append(c.getNome()).append(" - ").append(c.getCpf()).append("\n");
+                for (Carro carro : c.getCarros())
+                {
+                    if (carro.getId() == idCarro)
+                    {
+                        lista.append("    ").append(carro.getPlaca()).append(" - ").append(carro.getModelo()).append(" - ").append(carro.getCor()).append("\n");
+                    }
+                }
+            }
+        }
+        return lista.toString();
+    }
+
+    public static String printToVallet(String cpf)
+    {
+        List<Cliente> clientes = clienteDao.lerArquivo();
+        for (Cliente c : clientes)
+        {
+            if (c.getCpf().equals(cpf))
+            {
+                return c.getNome();
+            }
+        }
+        return null;
     }
 }

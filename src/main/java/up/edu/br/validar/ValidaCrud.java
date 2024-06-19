@@ -45,10 +45,9 @@ public class ValidaCrud {
 
     /**
      * Método responsável por confirmar o CPF
-     * @param cpf o CPF a ser confirmado
      * @return true se o CPF for confirmado, false se não for
      */
-    public static boolean confirmarCpf(String cpf) {
+    public static boolean confirmarCpf() {
         System.out.println("\né o Cliente que deseja? (1 - sim, 2 - não)");
         int confirmacao = scan.nextInt();
         scan.nextLine();

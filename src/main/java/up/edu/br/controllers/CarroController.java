@@ -125,4 +125,35 @@ public class CarroController {
         return maior;
     }
 
+    public static String printToVallet(int idCarro, String cpf)
+    {
+        List<Cliente> clientes = ClienteController.clienteDao.lerArquivo();
+        for (Cliente c : clientes)
+        {
+            if (c.getCpf().equals(cpf))
+            {
+                for (Carro carro : c.getCarros())
+                {
+                    if (carro.getId() == idCarro){return carro.getPlaca()+" - "+carro.getModelo()+" - "+carro.getCor();}
+                }
+            }
+        }
+        return null;
+    }
+
+    public static boolean ExistsCarro(String cpf, int idCarro){
+        List<Cliente> clientes = ClienteController.clienteDao.lerArquivo();
+        for (Cliente c : clientes)
+        {
+            if (c.getCpf().equals(cpf))
+            {
+                for (Carro carro : c.getCarros())
+                {
+                    if (carro.getId() == idCarro){return true;}
+                }
+            }
+        }
+        return false;
+    }
 }
+
