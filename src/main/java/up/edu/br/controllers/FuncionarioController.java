@@ -183,6 +183,11 @@ public class FuncionarioController{
         return funcionarios.isEmpty();
     }
 
+    /**
+     * Método responsável por retornar o nome de um funcionário
+     * @param ifFuncionario o id do funcionário
+     * @return String o nome do funcionário
+     */
     public static String printToVallet(int ifFuncionario){
         List<Funcionario> funcionarios = funcionarioDao.lerArquivo();
         for (Funcionario f : funcionarios){
@@ -193,6 +198,11 @@ public class FuncionarioController{
         return null;
     }
 
+    /**
+     * Método responsável por verificar se um funcionário existe
+     * @param id o id do funcionário
+     * @return boolean true se o funcionário existe, false se não
+     */
     public static boolean ExistsFuncionario(int id){
         List<Funcionario> funcionarios = funcionarioDao.lerArquivo();
         for (Funcionario f : funcionarios){

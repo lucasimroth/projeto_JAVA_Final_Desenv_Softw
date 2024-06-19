@@ -11,12 +11,26 @@ import static up.edu.br.Time.Horarios.PegarHorarioSaida;
 public class ValletController {
     static ValletDao valletDao = new ValletDao();
 
+
+    /**
+     * Método responsável por estacionar um carro no estacionamento no vallet
+     * @param idFuncionario o id do funcionário que está estacionando o carro
+     * @param cpf o cpf do cliente dono do carro
+     * @param idCarro o id do carro a ser estacionado
+     * o Id e o horario de entrada sao por metodos
+     */
     public void estacionarCarro(int idFuncionario, String cpf, int idCarro){
         List<Vallet> vallets = valletDao.lerArquivo();
         Vallet vallet = new Vallet(maiorID()+1, idFuncionario, cpf, idCarro, Horarios.PegarHorarioEntrada());
         vallets.add(vallet);
         valletDao.salvarArquivo(vallets);
     }
+
+
+    /**
+     * Método responsável por listar os carros estacionados no vallet
+     * ele chama metodos de print de outros controllers
+     */
     public void listarEstacionamento(){
         List<Vallet> vallets = valletDao.lerArquivo();
         if(vallets.isEmpty()){
@@ -30,6 +44,12 @@ public class ValletController {
                     v.getDataEntrada());
         }
     }
+
+    /**
+     * Método responsável por mostrar os dados de um carro estacionado no vallet
+     * @param cpf o cpf do cliente dono do carro
+     * @return true se o carro foi encontrado, false se não(condicao para fazer o view funcionar corretamente)
+     */
     public boolean mostrarVallet(String cpf){
         List<Vallet> vallets = valletDao.lerArquivo();
         if(vallets.isEmpty()){
@@ -49,6 +69,11 @@ public class ValletController {
         }
         return false;
     }
+
+    /**
+     * Método responsável por retirar um carro do estacionamento
+     * @param cpf o cpf do cliente dono do carro
+     */
     public void retirarCarro(String cpf){
         List<Vallet> vallets = valletDao.lerArquivo();
         for (Vallet v : vallets){
@@ -62,6 +87,7 @@ public class ValletController {
         System.out.println("Carro não encontrado");
     }
 
+    //metodo para pegar o maior id
     public int maiorID(){
         List<Vallet> vallets = valletDao.lerArquivo();
         if (vallets.isEmpty())
@@ -75,7 +101,4 @@ public class ValletController {
         }
         return maior;
     }
-
-    //cada dado confirma a si mesmo, o id do funcionario, cliente e carro existem e retornam confirmação nas funcoes;
-
 }

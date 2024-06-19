@@ -173,19 +173,29 @@ public class ClienteController {
         }
         return false;
     }
+
+    /**
+     * metodo para verificar se o arquivo contem algo ou nao
+     */
     public static boolean verificarArquivo()
     {
         List<Cliente> clientes = clienteDao.lerArquivo();
         return clientes.isEmpty();
     }
 
-    public static String printToListVallet(String cpd, int idCarro)
+    /**
+     * Método responsável por printar o carro no vallet
+     * @param cpf o cpf do cliente
+     * @param idCarro o id do carro
+     * @return string formatada em stringBuider com o nome do cliente
+     */
+    public static String printToListVallet(String cpf, int idCarro)
     {
         List<Cliente> clientes = clienteDao.lerArquivo();
         StringBuilder lista = new StringBuilder();
         for (Cliente c : clientes)
         {
-            if (c.getCpf().equals(cpd))
+            if (c.getCpf().equals(cpf))
             {
                 lista.append(c.getNome()).append(" - ").append(c.getCpf()).append("\n");
                 for (Carro carro : c.getCarros())
@@ -200,6 +210,11 @@ public class ClienteController {
         return lista.toString();
     }
 
+    /**
+     * Método responsável por printar o nome do cliente no vallet
+     * @param cpf o cpf do cliente
+     * @return string formatada em stringBuider com o nome do cliente
+     */
     public static String printToVallet(String cpf)
     {
         List<Cliente> clientes = clienteDao.lerArquivo();

@@ -13,6 +13,12 @@ public class ValidaVallet {
     static Scanner scan = new Scanner (System.in);
     private static final Logger logger = LogManager.getLogger(ValidaVallet.class);
 
+
+    /**
+     * Método responsável por validar o ID do funcionário no valletView, para garantir pegar o dado
+     * corretamente e que o funcionario exista
+     * @return id do funcionário
+     */
     public static int validaIdFuncionario(){
         logger.info("Iniciando validação do ID do funcionario");
         while(true) {
@@ -25,7 +31,11 @@ public class ValidaVallet {
         }
     }
 
-
+    /**
+     * Método responsável por validar o CPF do cliente no valletView, para garantir pegar o dado
+     * corretamente e que o cliente exista
+     * @return cpf do cliente
+     */
     public static String ValidaCpfCliente(){
         logger.info("Iniciando validação do CPF");
         while(true) {
@@ -42,6 +52,12 @@ public class ValidaVallet {
         }
     }
 
+    /**
+     * Método responsável por validar o ID do carro no valletView, para garantir pegar o dado
+     * corretamente e que o carro exista
+     * @param cpf o cpf do cliente dono do carro
+     * @return id do carro
+     */
     public static int ValidaIdCarro(String cpf){
         logger.info("Iniciando validação do ID do carro");
         while(true) {
