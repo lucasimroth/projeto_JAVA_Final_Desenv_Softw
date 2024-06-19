@@ -1,31 +1,29 @@
 package up.edu.br.models;
 
-public class Vallet {
-    private int idFuncionario;
-    private int idCliente;
-    private int idCarro;
-    private String dataEntrada;
+import java.time.LocalTime;
 
-    public Vallet(int idFuncionario, int idCliente, int idCarro, String dataEntrada) {
+public class Vallet {
+    private final int idVallet;
+    private int idFuncionario;
+    private String cpfCliente;
+    private int idCarro;
+    private LocalTime dataEntrada;
+
+    public Vallet(int idVallet, int idFuncionario, String cpf, int idCarro, LocalTime dataEntrada) {
+        this.idVallet = idVallet;
         this.idFuncionario = idFuncionario;
-        this.idCliente = idCliente;
+        this.cpfCliente = cpf;
         this.idCarro = idCarro;
         this.dataEntrada = dataEntrada;
     }
 
+    public int getIdVallet() { return idVallet;}
+
     public int getIdFuncionario() { return idFuncionario;}
 
-    public int getIdCliente() {return idCliente;}
+    public String getCpfCliente() {return cpfCliente;}
 
     public int getIdCarro() {return idCarro;}
 
-    public String getDataEntrada() {return dataEntrada;}
-
-    public void setIdFuncionario(int idFuncionario) {this.idFuncionario = idFuncionario;}
-
-    public void setIdCliente(int idCliente) {this.idCliente = idCliente;}
-
-    public void setIdCarro(int idCarro) {this.idCarro = idCarro;}
-
-    public void setDataEntrada(String dataEntrada) {this.dataEntrada = dataEntrada;}
+    public LocalTime getDataEntrada() {return dataEntrada;}
 }

@@ -183,4 +183,24 @@ public class FuncionarioController{
         return funcionarios.isEmpty();
     }
 
+    public static String printToVallet(int ifFuncionario){
+        List<Funcionario> funcionarios = funcionarioDao.lerArquivo();
+        for (Funcionario f : funcionarios){
+            if (f.getId() == ifFuncionario){
+                return f.getNome();
+            }
+        }
+        return null;
+    }
+
+    public static boolean ExistsFuncionario(int id){
+        List<Funcionario> funcionarios = funcionarioDao.lerArquivo();
+        for (Funcionario f : funcionarios){
+            if (f.getId() == id){
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
