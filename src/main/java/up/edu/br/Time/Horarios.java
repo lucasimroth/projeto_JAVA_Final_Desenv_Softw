@@ -7,6 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.temporal.ChronoUnit;
 
 public class Horarios {
 
@@ -26,7 +27,6 @@ public class Horarios {
         LocalTime horaSaida = LocalTime.now();
         String horaSaidaFormatada = horarioToString(horaSaida);
 
-        System.out.println("Hora saida: " + horaSaidaFormatada);
         return horaSaida;
     }
 
@@ -54,7 +54,8 @@ public class Horarios {
 
     public static LocalTime stringToHorario(String timeString) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-        return LocalTime.parse(timeString, formatter);
+        LocalTime time = LocalTime.parse(timeString, formatter);
+        return time.truncatedTo(ChronoUnit.SECONDS);
     }
 
 

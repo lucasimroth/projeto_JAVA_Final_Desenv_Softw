@@ -50,6 +50,10 @@ public class FuncionarioController{
             System.out.println("Não há funcionários cadastrados\n");
             return;
         }
+        if(ValletController.funcionarioEstaVinculado(id)){
+            System.out.println("Funcionário está estacionando um carro, não pode ser excluído\n");
+            return;
+        }
         for (Funcionario f : funcionarios)
         {
             if (f.getId() == id)
@@ -203,8 +207,12 @@ public class FuncionarioController{
      * @param id o id do funcionário
      * @return boolean true se o funcionário existe, false se não
      */
-    public static boolean ExistsFuncionario(int id){
+    public static boolean ExistsFuncionario(int id) throws NotFoundException {
         List<Funcionario> funcionarios = funcionarioDao.lerArquivo();
+        if(funcionarios.isEmpty())
+        {
+            throw new NotFoundException("Não há funcionários cadastrados\n");
+        }
         for (Funcionario f : funcionarios){
             if (f.getId() == id){
                 return true;

@@ -4,10 +4,10 @@ import java.time.LocalTime;
 
 public class Vallet {
     private final int idVallet;
-    private int idFuncionario;
-    private String cpfCliente;
-    private int idCarro;
-    private LocalTime dataEntrada;
+    private final int idFuncionario;
+    private final String cpfCliente;
+    private final int idCarro;
+    private final LocalTime dataEntrada;
 
     public Vallet(int idVallet, int idFuncionario, String cpf, int idCarro, LocalTime dataEntrada) {
         this.idVallet = idVallet;

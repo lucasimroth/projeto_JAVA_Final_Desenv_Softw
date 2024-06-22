@@ -28,6 +28,7 @@ public class ValidaCrud {
             } catch (InputMismatchException e) {
                 logger.error("Erro ao validar ID", e);
                 System.out.println("ID inválido, digite novamente: ");
+                scan.next();
             }
         }
     }
@@ -37,7 +38,7 @@ public class ValidaCrud {
      * @return true se o ID for confirmado, false se não for
      */
     public static boolean confirmarId() {
-        System.out.println("é o usuário que deseja? (1 - sim, 2 - não)");
+        System.out.println("é o que deseja? (1 - sim, 2 - não)");
         int confirmacao = scan.nextInt();
         scan.nextLine();
         return confirmacao != 1;

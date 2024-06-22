@@ -9,12 +9,13 @@ import up.edu.br.models.Vallet;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ValletDao implements DaoInterface<Vallet>{
     private static final Logger logger = LogManager.getLogger(ValletDao.class);
-    private static final String FILE_NAME_VALLET = "Vallet.txt";
+    private static final String FILE_NAME_VALLET = "vallet.txt";
 
 
     /**
@@ -34,7 +35,12 @@ public class ValletDao implements DaoInterface<Vallet>{
             logger.info("leitura dos Vallet do arquivo txt e adicao a lista Vallet");
             while((linha = reader.readLine()) != null){
                 String[] dados = linha.split(";");
-                Vallet vallet = new Vallet(Integer.parseInt(dados[0]), Integer.parseInt(dados[1]), dados[2], Integer.parseInt(dados[3]), Horarios.stringToHorario(dados[4]));
+                int IdVallet = Integer.parseInt(dados[0]);
+                int IdFuncionario = Integer.parseInt(dados[1]);
+                String cpf = dados[2];
+                int IdCarro = Integer.parseInt(dados[3]);
+                LocalTime horario = Horarios.stringToHorario(dados[4]);
+                Vallet vallet = new Vallet(IdVallet, IdFuncionario, cpf, IdCarro, horario);
                 v.add(vallet);
             }
         }catch (Exception e)
@@ -77,6 +83,10 @@ public class ValletDao implements DaoInterface<Vallet>{
     @Override
     public String FormatacaoString(Vallet v)
     {
-        return (v.getIdVallet() + ";" + v.getIdFuncionario() + ";" + v.getCpfCliente() + ";" + v.getIdCarro() + ";" + v.getDataEntrada());
+        return (v.getIdVallet() + ";" +
+                v.getIdFuncionario() + ";" +
+                v.getCpfCliente() + ";" +
+                v.getIdCarro() + ";" +
+                Horarios.horarioToString(v.getDataEntrada()));
     }
 }

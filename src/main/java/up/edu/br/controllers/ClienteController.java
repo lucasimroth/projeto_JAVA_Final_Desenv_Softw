@@ -20,9 +20,14 @@ public class ClienteController {
      */
     public static void CadastrarCliente(String nome, String cpf, String email, String telefone, List<Carro> carros){
 
-        if (jaExisteCpf(cpf))
-        {
-            System.out.println("\nCPF já cadastrado\n");
+        try{
+            if (jaExisteCpf(cpf))
+            {
+                System.out.println("\nCPF já cadastrado\n");
+                return;
+            }
+        } catch (NotFoundException e) {
+            System.out.println("Não há clientes cadastrados\n");
             return;
         }
         List<Cliente> clientes = clienteDao.lerArquivo();
@@ -67,6 +72,10 @@ public class ClienteController {
         if (clientes.isEmpty())
         {
             System.out.println("Não há clientes cadastrados\n");
+            return;
+        }
+        if(ValletController.clienteEstaVinculado(cpf)){
+            System.out.println("Cliente está vinculado a um carro no vallet\n");
             return;
         }
         for (Cliente c : clientes) {
@@ -157,12 +166,11 @@ public class ClienteController {
      * @param cpf o cpf a ser verificado
      * @return boolean true se o cpf já existe, false se não existe
      */
-    public static boolean jaExisteCpf(String cpf)
-    {
+    public static boolean jaExisteCpf(String cpf) throws NotFoundException {
         List<Cliente> clientes = clienteDao.lerArquivo();
         if(clientes.isEmpty())
         {
-            return false;
+            throw new NotFoundException("Não há clientes cadastrados\n");
         }
         for (Cliente c : clientes)
         {
@@ -202,12 +210,13 @@ public class ClienteController {
                 {
                     if (carro.getId() == idCarro)
                     {
-                        lista.append("    ").append(carro.getPlaca()).append(" - ").append(carro.getModelo()).append(" - ").append(carro.getCor()).append("\n");
+                        lista.append(" | ").append(carro.getPlaca()).append(" - ").append(carro.getModelo()).append(" - ").append(carro.getCor()).append("\n");
                     }
                 }
             }
         }
-        return lista.toString();
+        String listaString = lista.toString();
+        return listaString.replace("\n", " ");
     }
 
     /**

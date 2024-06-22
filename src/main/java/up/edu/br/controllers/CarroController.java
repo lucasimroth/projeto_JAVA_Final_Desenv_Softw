@@ -67,6 +67,10 @@ public class CarroController {
      */
     public static void ExcluirCarro(String cpf, int idCarro){
         List<Cliente> clientes = ClienteController.clienteDao.lerArquivo();
+        if(ValletController.carroEstaVinculado(idCarro, cpf)){
+            System.out.println("Carro está vinculado a um cliente no vallet\n");
+            return;
+        }
         for (Cliente cliente : clientes) {
             if (cliente.getCpf().equals(cpf)){
                 ExcluirCarro2(cliente.getCarros(), idCarro);
@@ -126,6 +130,7 @@ public class CarroController {
                 if (c.getId() == idCarro){
                     System.out.printf("     %-2s %-10s %-20s %-15s\n", "ID", "Placa", "Modelo", "Cor");
                     imprimirCarros(c);
+                    System.out.println();
                     return false;
                 }
             }
@@ -191,8 +196,12 @@ public class CarroController {
      * @param idCarro o id do carro
      * @return boolean true se o carro existe, false se não
      */
-    public static boolean ExistsCarro(String cpf, int idCarro){
+    public static boolean ExistsCarro(String cpf, int idCarro) throws NotFoundException {
         List<Cliente> clientes = ClienteController.clienteDao.lerArquivo();
+        if(clientes.isEmpty())
+        {
+            throw new NotFoundException("Não há clientes cadastrados\n");
+        }
         for (Cliente c : clientes)
         {
             if (c.getCpf().equals(cpf))
