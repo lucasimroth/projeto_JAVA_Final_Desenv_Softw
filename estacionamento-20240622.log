@@ -1,0 +1,129 @@
+2024-06-22 16:26:26.898 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-22 16:26:28.849 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-22 16:26:49.735 [main] INFO  up.edu.br.views.ValletView - Iniciando Menu Vallet.
+2024-06-22 16:26:51.886 [main] INFO  up.edu.br.views.ValletView - iniciando estacionamento de veiculo
+2024-06-22 16:26:51.896 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-22 16:26:51.901 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-22 16:26:51.905 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do ID do funcionario
+2024-06-22 16:26:51.906 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-22 16:26:53.342 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-22 16:26:53.342 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-22 16:26:53.343 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do CPF
+2024-06-22 16:26:55.873 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:26:55.878 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:26:55.887 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:26:55.888 [main] ERROR up.edu.br.daos.ValletDao - Ocorreu um erro ao ler arquivo Vallet.
+java.io.FileNotFoundException: vallet.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.ValletDao.lerArquivo(ValletDao.java:32) [classes/:?]
+	at up.edu.br.controllers.ValletController.jaEstacionou(ValletController.java:111) [classes/:?]
+	at up.edu.br.validar.ValidaVallet.validaCpfCliente(ValidaVallet.java:51) [classes/:?]
+	at up.edu.br.views.ValletView.estacionarCarro(ValletView.java:63) [classes/:?]
+	at up.edu.br.views.ValletView.menu(ValletView.java:36) [classes/:?]
+	at up.edu.br.Main.main(Main.java:34) [classes/:?]
+2024-06-22 16:26:55.907 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:26:55.907 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:26:55.908 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do ID do carro
+2024-06-22 16:26:55.908 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-22 16:26:58.015 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:26:58.015 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:26:58.016 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:26:58.016 [main] ERROR up.edu.br.daos.ValletDao - Ocorreu um erro ao ler arquivo Vallet.
+java.io.FileNotFoundException: vallet.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.ValletDao.lerArquivo(ValletDao.java:32) [classes/:?]
+	at up.edu.br.controllers.ValletController.estacionarCarro(ValletController.java:25) [classes/:?]
+	at up.edu.br.views.ValletView.estacionarCarro(ValletView.java:67) [classes/:?]
+	at up.edu.br.views.ValletView.menu(ValletView.java:36) [classes/:?]
+	at up.edu.br.Main.main(Main.java:34) [classes/:?]
+2024-06-22 16:26:58.024 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:26:58.024 [main] ERROR up.edu.br.daos.ValletDao - Ocorreu um erro ao ler arquivo Vallet.
+java.io.FileNotFoundException: vallet.txt (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at java.base/java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at up.edu.br.daos.ValletDao.lerArquivo(ValletDao.java:32) [classes/:?]
+	at up.edu.br.controllers.ValletController.maiorID(ValletController.java:97) [classes/:?]
+	at up.edu.br.controllers.ValletController.estacionarCarro(ValletController.java:26) [classes/:?]
+	at up.edu.br.views.ValletView.estacionarCarro(ValletView.java:67) [classes/:?]
+	at up.edu.br.views.ValletView.menu(ValletView.java:36) [classes/:?]
+	at up.edu.br.Main.main(Main.java:34) [classes/:?]
+2024-06-22 16:26:58.025 [main] INFO  up.edu.br.daos.ValletDao - iniciando Save do arquivo Vallet
+2024-06-22 16:26:58.026 [main] INFO  up.edu.br.daos.ValletDao - Escrevendo os dados do Vallet no arquivo txt
+2024-06-22 16:27:04.019 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-22 16:27:06.007 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-22 16:27:06.767 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-22 16:27:08.512 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-22 16:27:10.480 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-22 16:27:13.640 [main] ERROR up.edu.br.Main - Opção inválida
+2024-06-22 16:27:22.401 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-22 16:27:23.577 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-22 16:27:44.582 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-22 16:27:56.156 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-22 16:28:32.545 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-22 16:28:34.119 [main] INFO  up.edu.br.Main - Finalizando o sistema
+2024-06-22 16:29:09.629 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-22 16:29:11.868 [main] INFO  up.edu.br.views.ValletView - Iniciando Menu Vallet.
+2024-06-22 16:29:13.746 [main] INFO  up.edu.br.views.ValletView - iniciando estacionamento de veiculo
+2024-06-22 16:29:13.748 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-22 16:29:13.748 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-22 16:29:13.753 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do ID do funcionario
+2024-06-22 16:29:13.754 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-22 16:29:16.131 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-22 16:29:16.131 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-22 16:29:16.132 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do CPF
+2024-06-22 16:29:19.340 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:29:19.341 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:29:19.342 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:29:19.348 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-22 16:29:38.429 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:29:38.430 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:29:38.430 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:29:38.430 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-22 16:29:38.431 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:29:38.431 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:29:38.432 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do ID do carro
+2024-06-22 16:29:38.433 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-22 16:29:40.261 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:29:40.261 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:29:40.262 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:29:40.262 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-22 16:29:40.262 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:29:40.262 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-22 16:29:40.263 [main] INFO  up.edu.br.daos.ValletDao - iniciando Save do arquivo Vallet
+2024-06-22 16:29:40.263 [main] INFO  up.edu.br.daos.ValletDao - Escrevendo os dados do Vallet no arquivo txt
+2024-06-22 16:29:43.701 [main] INFO  up.edu.br.views.ValletView - iniciando retirada de veiculo
+2024-06-22 16:29:53.910 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-22 16:29:53.916 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-22 16:29:53.923 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-22 16:29:53.923 [main] INFO  up.edu.br.daos.HistoricoDao - iniciando Save do arquivo Historico
+2024-06-22 16:29:53.924 [main] INFO  up.edu.br.daos.HistoricoDao - Escrevendo os dados do Historico no arquivo txt
+2024-06-22 16:29:53.928 [main] INFO  up.edu.br.daos.ValletDao - iniciando Save do arquivo Vallet
+2024-06-22 16:29:53.928 [main] INFO  up.edu.br.daos.ValletDao - Escrevendo os dados do Vallet no arquivo txt
+2024-06-22 16:29:58.767 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-22 16:29:58.772 [main] INFO  up.edu.br.daos.HistoricoDao - leitura do Historico do arquivo txt
+2024-06-22 16:29:58.773 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-22 16:29:58.773 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-22 16:29:58.773 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:29:58.774 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:29:58.774 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:29:58.774 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:32:09.990 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-22 16:32:11.916 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-22 16:32:11.917 [main] INFO  up.edu.br.daos.HistoricoDao - leitura do Historico do arquivo txt
+2024-06-22 16:32:11.920 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-22 16:32:11.920 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-22 16:32:11.922 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:32:11.922 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-22 16:32:11.924 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-22 16:32:11.924 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes

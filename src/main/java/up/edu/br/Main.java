@@ -49,7 +49,9 @@ public class Main {
                 default:
                     logger.error("Opção inválida");
                     System.out.println("Opção inválida");
+                    continue;
             }
+            break;
         } while (true);
     }
 }

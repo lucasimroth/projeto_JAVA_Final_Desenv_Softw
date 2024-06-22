@@ -18,7 +18,10 @@ public class HistoricoController {
 
     public static void listarHistorico() {
         List<Historico> lista = new HistoricoDao().lerArquivo();
-
+        if (lista.isEmpty()) {
+            System.out.println("Não há histórico\n");
+            return;
+        }
         for (Historico historico : lista) {
             System.out.printf(historico.getTipo() + " - " +
                     FuncionarioController.printToVallet(historico.getIdFuncionario()) + " - " +
