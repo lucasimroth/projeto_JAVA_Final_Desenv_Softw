@@ -3,7 +3,6 @@ import up.edu.br.Exception.NotFoundException;
 import up.edu.br.Time.Horarios;
 import up.edu.br.Time.ValorHora;
 import up.edu.br.daos.ValletDao;
-import up.edu.br.models.Cliente;
 import up.edu.br.models.Vallet;
 
 import java.util.List;
@@ -92,7 +91,10 @@ public class ValletController {
         throw new NotFoundException("Cliente não encontrado");
     }
 
-    //metodo para pegar o maior id
+    /**
+     * Metodo responsavel por retornar o maiorID dos vallets
+     * @return o maior id dos vallets
+     */
     public static int maiorID(){
         List<Vallet> vallets = valletDao.lerArquivo();
         if (vallets.isEmpty())
@@ -107,6 +109,11 @@ public class ValletController {
         return maior;
     }
 
+    /**
+     * Método responsável por verificar se um cliente já estacionou um carro
+     * @param cpf o cpf do cliente
+     * @return false se o cliente já estacionou um carro, true caso contrário
+     */
     public static boolean jaEstacionou(String cpf) throws NotFoundException {
         List<Vallet> vallets = valletDao.lerArquivo();
         if(vallets.isEmpty())
@@ -123,6 +130,10 @@ public class ValletController {
         return true;
     }
 
+    /**
+     * Método responsavel por verificar se um funcionario esta vinculado a um vallet para verificar se é possivel exclui-lo
+     * @param idFuncionario o id do funcionario
+     */
     public static boolean funcionarioEstaVinculado(int idFuncionario) {
         List<Vallet> vallets = valletDao.lerArquivo();
         for (Vallet v : vallets)
@@ -135,6 +146,10 @@ public class ValletController {
         return true;
     }
 
+    /**
+     * Método responsavel por verificar se um cliente esta vinculado a um vallet para verificar se é possivel exclui-lo
+     * @param cpf o cpf do cliente
+     */
     public static boolean clienteEstaVinculado(String cpf) {
         List<Vallet> vallets = valletDao.lerArquivo();
         for (Vallet v : vallets)
@@ -147,6 +162,10 @@ public class ValletController {
         return true;
     }
 
+    /**
+     * Método responsavel por verificar se um carro esta vinculado a um vallet para verificar se é possivel exclui-lo
+     * @param idCarro o id do carro
+     */
     public static boolean carroEstaVinculado(int idCarro, String cpf) {
         List<Vallet> vallets = valletDao.lerArquivo();
         for (Vallet v : vallets)

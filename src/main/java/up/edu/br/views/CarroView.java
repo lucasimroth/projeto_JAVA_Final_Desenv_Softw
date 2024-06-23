@@ -35,7 +35,7 @@ public class CarroView {
 
         int opcao;
         do {
-            System.out.println("-------------Menu Carro-------------\n");
+            System.out.println("-------------------------------------Menu Carro-------------------------------------\n");
             System.out.print("Cliente: ");
 
             ClienteController.imprimirClientes(cliente);
@@ -46,22 +46,26 @@ public class CarroView {
             System.out.println("3 - Excluir Carro");
             System.out.println("4 - Listar Carro");
             System.out.println("5 - Voltar");
-            System.out.println("--------------------------------------\n\n");
+            ValidaMenu.rodape();
 
             opcao = ValidaMenu.validaOpcao();
 
             switch (opcao) {
                 case 1:
                     AdicionarCarro(cpf);
+                    ValidaMenu.rodape();
                     continue;
                 case 2:
                     AlterarCarro(cpf);
+                    ValidaMenu.rodape();
                     continue;
                 case 3:
                     ExcluirCarro(cpf);
+                    ValidaMenu.rodape();
                     continue;
                 case 4:
                     ListarCarro(cpf);
+                    ValidaMenu.rodape();
                     continue;
                 case 5:
                     return;
@@ -71,9 +75,13 @@ public class CarroView {
         } while (true);
     }
 
+    /**
+     * O metodo AdicionarCarro interage com o usuario, valida as entradas e chama o metodo AdicionarCarro no controller
+     * @param cpf cpf do cliente dono do carro
+     */
     public static void AdicionarCarro(String cpf){
         logger.info("Iniciando Adicao de carro");
-        System.out.println("----------Cadastro de Carro-----------\n");
+        System.out.println("-------------------------------------Cadastro de Carro-------------------------------------\n");
 
         System.out.println("Digite a placa do novo carro: ");
         String placa = ValidaCrud.validaPlaca();
@@ -85,9 +93,13 @@ public class CarroView {
         CarroController.AdicionarCarro(cpf, placa, modelo, cor);
     }
 
+    /**
+     * O metodo AlterarCarro interage com o usuario, valida as entradas e chama o metodo AlterarCarro no controller
+     * @param cpf cpf do cliente dono do carro
+     */
     public static void AlterarCarro(String cpf){
         logger.info("Iniciando Alteracao de carro");
-        System.out.println("----------Alterar Carro-----------\n");
+        System.out.println("-------------------------------------Alterar Carro-------------------------------------\n");
         ListarCarro(cpf);
 
         int idCarro;
@@ -111,9 +123,13 @@ public class CarroView {
         CarroController.AlterarCarro(cpf, idCarro, modelo, cor);
     }
 
+    /**
+     * O metodo ExcluirCarro interage com o usuario, valida as entradas e chama o metodo ExcluirCarro no controller
+     * @param cpf cpf do cliente dono do carro
+     */
     public static void ExcluirCarro(String cpf){
         logger.info("Iniciando Exclusao de carro");
-        System.out.println("----------Excluir Carro-----------\n");
+        System.out.println("-------------------------------------Excluir Carro-------------------------------------\n");
         ListarCarro(cpf);
         int idCarro;
         do {
@@ -130,8 +146,13 @@ public class CarroView {
         CarroController.ExcluirCarro(cpf, idCarro);
     }
 
+    /**
+     * O metodo ListarCarro chama o metodo ListarCarro no controller
+     * @param cpf cpf do cliente dono do carro
+     */
     public static void ListarCarro(String cpf){
         logger.info("Iniciando Listagem de carro");
+        System.out.println("-------------------------------------Listar Carro-------------------------------------\n");
         CarroController.ListarCarro(cpf);
     }
 }

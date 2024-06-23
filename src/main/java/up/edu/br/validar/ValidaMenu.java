@@ -30,4 +30,11 @@ public class ValidaMenu {
         return opcao;
     }
 
+    /**
+     * Método responsável por imprimir o rodapé do menu
+     */
+    public static void rodape(){
+        System.out.println("------------------------------------------------------------------------------------------------\n");
+    }
+
 }

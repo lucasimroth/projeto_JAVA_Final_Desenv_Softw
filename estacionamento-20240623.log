@@ -1,0 +1,98 @@
+2024-06-23 10:59:26.236 [main] INFO  up.edu.br.Main - Iniciando o sistema
+2024-06-23 10:59:28.272 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-23 10:59:28.277 [main] INFO  up.edu.br.daos.HistoricoDao - leitura do Historico do arquivo txt
+2024-06-23 10:59:28.299 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 10:59:28.303 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 10:59:28.312 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 10:59:28.316 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 10:59:28.324 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 10:59:28.324 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 10:59:33.940 [main] INFO  up.edu.br.views.ValletView - Iniciando Menu Vallet.
+2024-06-23 10:59:37.264 [main] INFO  up.edu.br.views.ValletView - iniciando listagem de estacionamento
+2024-06-23 10:59:37.280 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 10:59:37.284 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 10:59:37.290 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 10:59:37.290 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 10:59:37.291 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 10:59:37.291 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 10:59:41.437 [main] INFO  up.edu.br.views.ValletView - iniciando estacionamento de veiculo
+2024-06-23 10:59:41.437 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 10:59:41.438 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 10:59:41.450 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do ID do funcionario
+2024-06-23 10:59:41.459 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-23 10:59:45.542 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 10:59:45.542 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 10:59:45.542 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do CPF
+2024-06-23 10:59:49.062 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 10:59:49.062 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 10:59:49.062 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 10:59:49.063 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 10:59:49.063 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 10:59:49.063 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 10:59:49.064 [main] INFO  up.edu.br.validar.ValidaVallet - Iniciando validação do ID do carro
+2024-06-23 10:59:49.064 [main] INFO  up.edu.br.validar.ValidaCrud - Iniciando validação do ID
+2024-06-23 10:59:51.727 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 10:59:51.727 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 10:59:51.728 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 10:59:51.728 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 10:59:51.728 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 10:59:51.728 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 10:59:51.729 [main] INFO  up.edu.br.daos.ValletDao - iniciando Save do arquivo Vallet
+2024-06-23 10:59:51.729 [main] INFO  up.edu.br.daos.ValletDao - Escrevendo os dados do Vallet no arquivo txt
+2024-06-23 11:00:09.958 [main] INFO  up.edu.br.views.ValletView - iniciando listagem de estacionamento
+2024-06-23 11:00:09.959 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 11:00:09.965 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 11:00:09.965 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 11:00:09.966 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 11:00:09.966 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:09.966 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:09.966 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 11:00:09.966 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 11:00:09.967 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:09.967 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:27.744 [main] INFO  up.edu.br.views.ValletView - iniciando retirada de veiculo
+2024-06-23 11:00:32.160 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 11:00:32.160 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 11:00:32.161 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 11:00:32.161 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 11:00:32.161 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:32.161 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:32.162 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:32.162 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:40.795 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 11:00:40.795 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 11:00:40.796 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 11:00:40.796 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 11:00:40.796 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:40.796 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:40.797 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:40.797 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:49.058 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 11:00:49.058 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 11:00:49.058 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-23 11:00:49.059 [main] INFO  up.edu.br.daos.HistoricoDao - leitura do Historico do arquivo txt
+2024-06-23 11:00:49.059 [main] INFO  up.edu.br.daos.HistoricoDao - iniciando Save do arquivo Historico
+2024-06-23 11:00:49.059 [main] INFO  up.edu.br.daos.HistoricoDao - Escrevendo os dados do Historico no arquivo txt
+2024-06-23 11:00:49.064 [main] INFO  up.edu.br.daos.ValletDao - iniciando Save do arquivo Vallet
+2024-06-23 11:00:49.064 [main] INFO  up.edu.br.daos.ValletDao - Escrevendo os dados do Vallet no arquivo txt
+2024-06-23 11:00:51.273 [main] INFO  up.edu.br.views.ValletView - iniciando listagem de estacionamento
+2024-06-23 11:00:51.274 [main] INFO  up.edu.br.daos.ValletDao - inciando leitura do arquivo Vallet
+2024-06-23 11:00:51.275 [main] INFO  up.edu.br.daos.ValletDao - leitura dos Vallet do arquivo txt e adicao a lista Vallet
+2024-06-23 11:00:51.275 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 11:00:51.275 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 11:00:51.275 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:51.275 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:58.258 [main] INFO  up.edu.br.daos.HistoricoDao - inciando leitura do arquivo Historico
+2024-06-23 11:00:58.264 [main] INFO  up.edu.br.daos.HistoricoDao - leitura do Historico do arquivo txt
+2024-06-23 11:00:58.264 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 11:00:58.265 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 11:00:58.265 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:58.265 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:58.265 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:58.265 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:58.265 [main] INFO  up.edu.br.daos.FuncionarioDao - inciando leitura do arquivo funcionarios
+2024-06-23 11:00:58.266 [main] INFO  up.edu.br.daos.FuncionarioDao - leitura dos funcionarios do arquivo txt e adicao a lista funcionarios
+2024-06-23 11:00:58.266 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:58.266 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes
+2024-06-23 11:00:58.266 [main] INFO  up.edu.br.daos.ClienteDao - Iniciando leitura do arquivo clientes
+2024-06-23 11:00:58.266 [main] INFO  up.edu.br.daos.ClienteDao - Leitura dos clientes do arquivo txt e adição à lista clientes

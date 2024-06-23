@@ -83,6 +83,11 @@ public class ClienteDao implements DaoInterface<Cliente> {
         }
     }
 
+    /**
+     * Método responsável por formatar os dados do cliente para salvar no arquivo
+     * @param cliente o cliente a ser formatado
+     * @return String dos dados do cliente formatados
+     */
     @Override
     public String FormatacaoString(Cliente cliente) {
         StringBuilder sb = new StringBuilder();

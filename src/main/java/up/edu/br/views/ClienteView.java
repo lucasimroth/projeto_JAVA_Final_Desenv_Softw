@@ -16,10 +16,13 @@ public class ClienteView {
     private static final Logger logger = LogManager.getLogger(ClienteView.class);
     static Scanner scan = new Scanner (System.in);
 
+    /**
+     * Método responsável por exibir o menu de Cliente
+     */
     public static void menu(){
         int opcao;
         do {
-            System.out.println("-------------Menu Cliente-------------\n");
+            System.out.println("-------------------------------------Menu Cliente---------------------------------------\n");
             System.out.println("Digite a opção desejada: \n");
             System.out.println("1 - Cadastrar Cliente");
             System.out.println("2 - Alterar Cliente");
@@ -27,25 +30,30 @@ public class ClienteView {
             System.out.println("4 - Listar Cliente");
             System.out.println("5 - Modificar Carro de Cliente");
             System.out.println("6 - Voltar");
-            System.out.println("--------------------------------------\n\n");
+            System.out.println("\n------------------------------------------------------------------------------------------------\n");
 
             opcao = ValidaMenu.validaOpcao();
 
             switch (opcao) {
                 case 1:
                     CadastrarCliente();
+                    ValidaMenu.rodape();
                     continue;
                 case 2:
                     AlterarCliente();
+                    ValidaMenu.rodape();
                     continue;
                 case 3:
                     ExcluirCliente();
+                    ValidaMenu.rodape();
                     continue;
                 case 4:
                     ListarClientes();
+                    ValidaMenu.rodape();
                     continue;
                 case 5:
                     CarroView.menu();
+                    ValidaMenu.rodape();
                     continue;
                 case 6:
                     return;
@@ -55,9 +63,12 @@ public class ClienteView {
         } while (true);
     }
 
+    /**
+     * O método cadastrarCliente interage com o usuário, valida as entradas e chama o método CadastrarCliente no controller
+     */
     public static void CadastrarCliente() {
         logger.info("Iniciando cadastro de cliente");
-        System.out.println("----------Cadastro de Funcionário-----------\n");
+        System.out.println("-------------------------------------Cadastro de Funcionário---------------------------------------\n");
         System.out.println("Digite o nome do cliente: ");
         String nome = ValidaCrud.validaNome();
         System.out.println("Digite o CPF do cliente: ");
@@ -81,6 +92,11 @@ public class ClienteView {
         ClienteController.CadastrarCliente(nome, cpf, email, telefone, carros);
     }
 
+    /**
+     * O método CadastrarClienteCarro interage com o usuário, valida as entradas e retorna um objeto Carro
+     * @param id o id do carro
+     * @return um objeto Carro
+     */
     public static Carro CadastrarClienteCarro(int id) {
         System.out.println("Digite a placa do carro: ");
         String placa = ValidaCrud.validaPlaca();
@@ -93,7 +109,9 @@ public class ClienteView {
     }
 
 
-
+    /**
+     * O método AlterarCliente interage com o usuário, valida as entradas e chama o método AlterarCliente no controller
+     */
     public static void AlterarCliente() {
         logger.info("Iniciando alteração de Clientes");
         if(ClienteController.verificarArquivo()){
@@ -104,7 +122,7 @@ public class ClienteView {
         ListarClientes();
         String cpf;
 
-        System.out.println("----------Alteração de Cliente-----------\n");
+        System.out.println("-------------------------------------Alteração de Cliente---------------------------------------\n");
         do {
             System.out.println("Digite o CPF do Cliente que deseja alterar: ");
             cpf = ValidaCrud.validaCpf();
@@ -127,6 +145,9 @@ public class ClienteView {
         ClienteController.AlterarCliente(cpf, nome, email, telefone);
     }
 
+    /**
+     * O método ExcluirCliente interage com o usuário, valida as entradas e chama o método ExcluirCliente no controller
+     */
     public static void ExcluirCliente() {
         logger.info("Iniciando exclusao de Clientes");
         if(ClienteController.verificarArquivo()){
@@ -136,7 +157,7 @@ public class ClienteView {
         }
         ListarClientes();
         String cpf;
-        System.out.println("----------Exclusão de Cliente-----------\n");
+        System.out.println("-------------------------------------Exclusão de Cliente---------------------------------------\n");
         do {
             System.out.println("Digite o CPF do Cliente que deseja excluir: ");
             cpf = ValidaCrud.validaCpf();
@@ -152,7 +173,11 @@ public class ClienteView {
         ClienteController.ExcluirCliente(cpf);
     }
 
+    /**
+     * O método ListarClientes chama o método ListarClientes no controller
+     */
     public static void ListarClientes() {
+        System.out.println("-------------------------------------Lista de Clientes---------------------------------------\n");
         ClienteController.ListarClientes();
     }
 

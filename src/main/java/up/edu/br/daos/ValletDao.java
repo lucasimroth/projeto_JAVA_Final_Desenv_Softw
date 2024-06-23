@@ -3,7 +3,6 @@ package up.edu.br.daos;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import up.edu.br.Time.Horarios;
-import up.edu.br.models.Funcionario;
 import up.edu.br.models.Vallet;
 
 import java.io.BufferedReader;
